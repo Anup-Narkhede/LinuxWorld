@@ -1,0 +1,16 @@
+#!/bin/bash
+# Author: Anup Narkhede
+# Description: Check multiple servers status mentioned in given file
+
+hosts="/home/cent8/ShellScripts/myhosts"
+
+for ip in $(cat $hosts)
+do 
+	ping -c1 $ip &> /dev/null
+	if [ $? -eq 0 ]
+	then
+	echo "$ip is OK"
+	else
+	echo "$ip is NOT OK"
+	fi
+done
