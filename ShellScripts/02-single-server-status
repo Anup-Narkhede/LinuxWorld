@@ -1,0 +1,18 @@
+#!/bin/bash
+# Author: Anup Narkhede
+# Description: Check Single Remote Server Status
+
+host="192.168.111.1"
+ping -c1 $host &> /dev/null  #-cn => ping n number of times
+	if [ $? -eq 0 ] # $? => exit status of last command executed
+	then
+	echo "$host is OK"
+	else
+	echo "$host is NOT OK"
+	fi
+
+
+# &> = both output and error redirection
+# /dev/null is a file in linux  where any throw will disappear
+
+
