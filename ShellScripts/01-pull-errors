@@ -1,0 +1,17 @@
+#Author: Anup Narkhede
+#Description: This script pull error messages from /var/log/messages and disply no of error lines and timestamp
+
+cp /var/log/messages . 
+mv messages log-messages
+grep error log-messages
+echo "------------------------------------------------------------------"
+echo "---------------------------No of Error lines----------------------"
+grep error log-messages | wc -l
+echo "-------------------------------Timestamp--------------------------"
+date
+
+
+# Try :grep fail log-messages and grep warn log-messages
+#Run commands:
+#chmod +x pull-erros
+#./pull-errors > my-error-logs.txt 
