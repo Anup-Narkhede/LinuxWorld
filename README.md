@@ -43,3 +43,7 @@ first-last/step
 e.g. 0-12/2
 o/p: 0,2,4,6,8,10,12
 ```
+
+# Redirection
+
+![Redirection](Images/Redirection.png)
