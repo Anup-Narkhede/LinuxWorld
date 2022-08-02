@@ -46,4 +46,4 @@ o/p: 0,2,4,6,8,10,12
 
 # Redirection
 
-![Redirection](/LinuxWorld/Images/Redirection.png)
+![Redirection](https://github.com/Anup-Narkhede/LinuxWorld/blob/main/Images/Redirection.png)
