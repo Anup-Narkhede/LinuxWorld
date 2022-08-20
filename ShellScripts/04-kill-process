@@ -1,0 +1,7 @@
+#!/bin/bash
+#Author: Anup Narkhede
+#Description: Find process and kill
+
+ps -ef | grep "sleep" | grep -v grep | awk '{print $2}' | xargs -I{} kill {}
+
+echo "All sleeping processess killed"
